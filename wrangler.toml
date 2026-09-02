@@ -1,3 +1,12 @@
 name = "sveltia-cms-auth"
 main = "src/index.js"
 compatibility_date = "2023-03-24"
+
+# Sites permitted to use this authenticator. Kept here rather than as a
+# dashboard variable because `wrangler deploy` treats this file as authoritative
+# and would otherwise wipe it on every build. The client ID and secret are
+# Cloudflare secrets instead -- credentials in Cloudflare, configuration in git.
+#
+# This is the only change from upstream sveltia/sveltia-cms-auth.
+[vars]
+ALLOWED_DOMAINS = "hpsc.math.uni-augsburg.de,hpsc-preview.math.uni-augsburg.de"

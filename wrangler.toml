@@ -9,4 +9,4 @@ compatibility_date = "2023-03-24"
 #
 # This is the only change from upstream sveltia/sveltia-cms-auth.
 [vars]
-ALLOWED_DOMAINS = "hpsc.math.uni-augsburg.de,hpsc-preview.math.uni-augsburg.de"
+ALLOWED_DOMAINS = "hpsc.math.uni-augsburg.de,hpsc-internal.math.uni-augsburg.de,hpsc-preview.math.uni-augsburg.de"
